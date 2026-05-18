@@ -1,0 +1,16 @@
+dataset_name: tomatoes_v1
+path: C:\Users\User\Desktop\veg_vision_ml1\vegvision-yolo\data\datasets\tomatoes_v1
+train: train/images
+val: valid/images
+test: test/images
+nc: 9
+names:
+  0: Early Blight
+  1: Healthy
+  2: Late Blight
+  3: Leaf Miner
+  4: Leaf Mold
+  5: Mosaic Virus
+  6: Septoria
+  7: Spider Mites
+  8: Yellow Leaf Curl Virus

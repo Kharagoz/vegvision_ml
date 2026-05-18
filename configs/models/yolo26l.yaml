@@ -1,0 +1,10 @@
+model_name: yolo26l
+display_name: YOLO26l
+role: cloud
+model_source:
+  type: auto
+  value: yolo26l.pt
+  fallback_value: yolo26l.yaml
+train_overrides: {}
+validation_overrides: {}
+notes: "Model source is configurable so you can switch between weights and architecture YAML."

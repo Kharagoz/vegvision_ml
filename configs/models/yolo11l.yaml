@@ -1,0 +1,10 @@
+model_name: yolo11l
+display_name: YOLO11l
+role: cloud
+model_source:
+  type: weights
+  value: yolo11l.pt
+  fallback_value: null
+train_overrides: {}
+validation_overrides: {}
+notes: "Heavier model for final confirmation in cloud."

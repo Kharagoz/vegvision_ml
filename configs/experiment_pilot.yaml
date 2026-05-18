@@ -1,0 +1,69 @@
+project:
+  name: vegvision_diploma_pilot
+  task: detect
+  seed: 42
+  description: "Pilot training with reduced epochs to test dataset and config setup."
+
+data:
+  dataset_config: data/datasets/tomatoes_v1/data.yaml
+  test_split: test
+
+paths:
+  results_dir: results
+  runs_dir: runs
+  metrics_dir: results/metrics
+  comparisons_dir: results/comparisons
+  logs_dir: results/logs
+
+train:
+  epochs: 3
+  batch: 8
+  imgsz: 640
+  device: cpu
+  workers: 2
+  patience: 10
+  optimizer: auto
+  cache: false
+  amp: true
+  pretrained: true
+  close_mosaic: 1
+  cos_lr: false
+  lr0: 0.01
+  lrf: 0.01
+  dropout: 0.0
+  freeze: 0
+  plots: false
+  save: true
+  val: true
+
+validation:
+  conf: 0.25
+  iou: 0.7
+  max_det: 300
+  plots: true
+  save_json: true
+  save_txt: false
+
+comparison:
+  metrics:
+    - precision
+    - recall
+    - map50
+    - map50_95
+    - inference_ms
+    - model_size_mb
+
+comparison_roles:
+  edge:
+    primary_metrics:
+      - recall
+      - inference_ms
+      - model_size_mb
+    note: "Edge models are evaluated primarily by recall, speed and size."
+  cloud:
+    primary_metrics:
+      - precision
+      - map50
+      - map50_95
+      - inference_ms
+    note: "Cloud models are evaluated by precision and mAP (accuracy), speed as secondary."

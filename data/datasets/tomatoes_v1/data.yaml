@@ -1,0 +1,16 @@
+path: C:\Users\User\Desktop\veg_vision_ml1\vegvision-yolo\data\datasets\tomatoes_v1
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 9
+names: ['Early Blight', 'Healthy', 'Late Blight', 'Leaf Miner', 'Leaf Mold', 'Mosaic Virus', 'Septoria', 'Spider Mites', 'Yellow Leaf Curl Virus']
+
+dataset_name: tomatoes_v1
+
+roboflow:
+  workspace: bryan-b56jm
+  project: tomato-leaf-disease-ssoha
+  version: 60
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/bryan-b56jm/tomato-leaf-disease-ssoha/dataset/60

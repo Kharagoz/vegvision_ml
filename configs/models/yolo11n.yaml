@@ -1,0 +1,10 @@
+model_name: yolo11n
+display_name: YOLO11n
+role: edge
+model_source:
+  type: weights
+  value: yolo11n.pt
+  fallback_value: null
+train_overrides: {}
+validation_overrides: {}
+notes: "Light model for edge filtering and high-recall screening."
