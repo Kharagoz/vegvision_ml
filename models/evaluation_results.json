@@ -1,0 +1,16 @@
+{
+  "model_path": "C:\\Users\\User\\Desktop\\vegvision-yolo\\runs\\train\\yolo11n_20260518_170929\\weights\\best.pt",
+  "data_yaml_path": "C:\\Users\\User\\Desktop\\vegvision-yolo\\data\\datasets\\tomatoes_v1\\data.yaml",
+  "precision": 0.8812101061902938,
+  "recall": 0.7418618071186825,
+  "map50": 0.8704713357692578,
+  "map50_95": 0.6954911301775304,
+  "results_dict": {
+    "metrics/precision(B)": 0.8812101061902938,
+    "metrics/recall(B)": 0.7418618071186825,
+    "metrics/mAP50(B)": 0.8704713357692578,
+    "metrics/mAP50-95(B)": 0.6954911301775304,
+    "fitness": 0.6954911301775304
+  },
+  "save_dir": "C:\\Users\\User\\runs\\detect\\val7"
+}

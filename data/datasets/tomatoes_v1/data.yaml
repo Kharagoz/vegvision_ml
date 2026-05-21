@@ -1,4 +1,4 @@
-path: C:\Users\User\Desktop\veg_vision_ml1\vegvision-yolo\data\datasets\tomatoes_v1
+path: C:\Users\User\Desktop\vegvision-yolo\data\datasets\tomatoes_v1
 train: train/images
 val: valid/images
 test: test/images

@@ -1,0 +1,7 @@
+Оценка модели YOLO11n
+Precision: 0.8812101061902938
+Recall: 0.7418618071186825
+mAP50: 0.8704713357692578
+mAP50-95: 0.6954911301775304
+Data YAML: C:\Users\User\Desktop\vegvision-yolo\data\datasets\tomatoes_v1\data.yaml
+Weights: C:\Users\User\Desktop\vegvision-yolo\runs\train\yolo11n_20260518_170929\weights\best.pt
